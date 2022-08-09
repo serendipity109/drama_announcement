@@ -5,12 +5,13 @@ from airflow.operators.python_operator import PythonOperator, BranchPythonOperat
 from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.slack_operator import SlackAPIPostOperator
 import os
+from crawler import check_new
 
 default_args = {
     'owner': 'Adam',
     'depends_on_past': False,
     'retries': 2,
-    'retry_delay': timedelta(days=1)
+    'retry_delay': timedelta(days=7)
 }
 
 
@@ -24,9 +25,8 @@ def process_metadata(mode, **context):
 def check_comic_info(**context):
     all_comic_info = context['task_instance'].xcom_pull(task_ids='get_read_history')
     print("去漫畫網站看有沒有新的章節")
-
-    anything_new = time.time() % 2 > 1
-    return anything_new, all_comic_info
+    new = check_new()
+    return new, all_comic_info
 
 
 def decide_what_to_do(**context):

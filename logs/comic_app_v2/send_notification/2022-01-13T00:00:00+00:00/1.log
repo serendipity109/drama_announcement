@@ -1,0 +1,21 @@
+[2022-02-28 14:59:33,015] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.send_notification scheduled__2022-01-13T00:00:00+00:00 [queued]>
+[2022-02-28 14:59:33,023] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.send_notification scheduled__2022-01-13T00:00:00+00:00 [queued]>
+[2022-02-28 14:59:33,023] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 14:59:33,024] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-28 14:59:33,024] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 14:59:33,033] {taskinstance.py:1264} INFO - Executing <Task(SlackAPIPostOperator): send_notification> on 2022-01-13 00:00:00+00:00
+[2022-02-28 14:59:33,036] {standard_task_runner.py:52} INFO - Started process 34473 to run task
+[2022-02-28 14:59:33,042] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'send_notification', 'scheduled__2022-01-13T00:00:00+00:00', '--job-id', '146', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpwsmy9ttd', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpsqoedwr_']
+[2022-02-28 14:59:33,044] {standard_task_runner.py:77} INFO - Job 146: Subtask send_notification
+[2022-02-28 14:59:33,094] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.send_notification scheduled__2022-01-13T00:00:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-28 14:59:33,137] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=send_notification
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-13T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-13T00:00:00+00:00
+[2022-02-28 14:59:33,576] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=send_notification, execution_date=20220113T000000, start_date=20220228T065933, end_date=20220228T065933
+[2022-02-28 14:59:33,612] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-28 14:59:33,656] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

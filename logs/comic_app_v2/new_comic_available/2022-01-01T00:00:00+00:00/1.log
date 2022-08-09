@@ -48,3 +48,221 @@ AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-01T00:00:00+00:00
 [2022-02-25 17:18:29,366] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220101T000000, start_date=20220225T091829, end_date=20220225T091829
 [2022-02-25 17:18:29,385] {local_task_job.py:154} INFO - Task exited with return code 0
 [2022-02-25 17:18:29,421] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-28 14:57:15,749] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2022-02-28 14:57:15,759] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2022-02-28 14:57:15,759] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 14:57:15,759] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-28 14:57:15,760] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 14:57:15,775] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-01-01 00:00:00+00:00
+[2022-02-28 14:57:15,785] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-01-01T00:00:00+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpvq_t0q6o', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmphk96idp0']
+[2022-02-28 14:57:15,788] {standard_task_runner.py:77} INFO - Job 92: Subtask new_comic_available
+[2022-02-28 14:57:15,777] {standard_task_runner.py:52} INFO - Started process 34187 to run task
+[2022-02-28 14:57:15,850] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-28 14:57:15,894] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-01T00:00:00+00:00
+[2022-02-28 14:57:15,903] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-28 14:57:15,904] {python.py:175} INFO - Done. Returned value was: yes_generate_notification
+[2022-02-28 14:57:15,904] {skipmixin.py:140} INFO - Following branch yes_generate_notification
+[2022-02-28 14:57:15,905] {skipmixin.py:171} INFO - Skipping tasks ['no_do_nothing']
+[2022-02-28 14:57:15,935] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220101T000000, start_date=20220228T065715, end_date=20220228T065715
+[2022-02-28 14:57:15,999] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-28 14:57:16,227] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-28 15:03:29,538] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2022-02-28 15:03:29,547] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2022-02-28 15:03:29,547] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 15:03:29,547] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-28 15:03:29,547] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 15:03:29,557] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-01-01 00:00:00+00:00
+[2022-02-28 15:03:29,559] {standard_task_runner.py:52} INFO - Started process 34745 to run task
+[2022-02-28 15:03:29,565] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-01-01T00:00:00+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmp4hgshwb5', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpdr23x47_']
+[2022-02-28 15:03:29,567] {standard_task_runner.py:77} INFO - Job 163: Subtask new_comic_available
+[2022-02-28 15:03:29,612] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-28 15:03:29,653] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-01T00:00:00+00:00
+[2022-02-28 15:03:29,658] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-28 15:03:29,658] {python.py:175} INFO - Done. Returned value was: no_do_nothing
+[2022-02-28 15:03:29,658] {skipmixin.py:140} INFO - Following branch no_do_nothing
+[2022-02-28 15:03:29,659] {skipmixin.py:171} INFO - Skipping tasks ['yes_generate_notification']
+[2022-02-28 15:03:29,680] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220101T000000, start_date=20220228T070329, end_date=20220228T070329
+[2022-02-28 15:03:29,705] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-28 15:03:29,740] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-28 15:07:47,864] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2022-02-28 15:07:47,875] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2022-02-28 15:07:47,875] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 15:07:47,875] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-28 15:07:47,876] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 15:07:47,888] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-01-01 00:00:00+00:00
+[2022-02-28 15:07:47,891] {standard_task_runner.py:52} INFO - Started process 35254 to run task
+[2022-02-28 15:07:47,898] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-01-01T00:00:00+00:00', '--job-id', '225', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpj742oycx', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpkpo3hgo7']
+[2022-02-28 15:07:47,900] {standard_task_runner.py:77} INFO - Job 225: Subtask new_comic_available
+[2022-02-28 15:07:47,957] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-28 15:07:48,000] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-01T00:00:00+00:00
+[2022-02-28 15:07:48,006] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-28 15:07:48,006] {python.py:175} INFO - Done. Returned value was: no_do_nothing
+[2022-02-28 15:07:48,006] {skipmixin.py:140} INFO - Following branch no_do_nothing
+[2022-02-28 15:07:48,007] {skipmixin.py:171} INFO - Skipping tasks ['yes_generate_notification']
+[2022-02-28 15:07:48,029] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220101T000000, start_date=20220228T070747, end_date=20220228T070748
+[2022-02-28 15:07:48,086] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-28 15:07:48,149] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-28 15:09:20,056] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2022-02-28 15:09:20,064] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2022-02-28 15:09:20,064] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 15:09:20,064] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-28 15:09:20,064] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 15:09:20,073] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-01-01 00:00:00+00:00
+[2022-02-28 15:09:20,075] {standard_task_runner.py:52} INFO - Started process 35461 to run task
+[2022-02-28 15:09:20,080] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-01-01T00:00:00+00:00', '--job-id', '241', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmphgph8154', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpiwvvdmox']
+[2022-02-28 15:09:20,082] {standard_task_runner.py:77} INFO - Job 241: Subtask new_comic_available
+[2022-02-28 15:09:20,126] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-28 15:09:20,162] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-01T00:00:00+00:00
+[2022-02-28 15:09:20,168] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-28 15:09:20,168] {python.py:175} INFO - Done. Returned value was: yes_generate_notification
+[2022-02-28 15:09:20,168] {skipmixin.py:140} INFO - Following branch yes_generate_notification
+[2022-02-28 15:09:20,169] {skipmixin.py:171} INFO - Skipping tasks ['no_do_nothing']
+[2022-02-28 15:09:20,189] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220101T000000, start_date=20220228T070920, end_date=20220228T070920
+[2022-02-28 15:09:20,222] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-28 15:09:20,254] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-28 15:14:28,890] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2022-02-28 15:14:28,898] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2022-02-28 15:14:28,898] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 15:14:28,898] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-28 15:14:28,898] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 15:14:28,907] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-01-01 00:00:00+00:00
+[2022-02-28 15:14:28,909] {standard_task_runner.py:52} INFO - Started process 35875 to run task
+[2022-02-28 15:14:28,914] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-01-01T00:00:00+00:00', '--job-id', '264', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpr4ndm3y0', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpn00smn1t']
+[2022-02-28 15:14:28,916] {standard_task_runner.py:77} INFO - Job 264: Subtask new_comic_available
+[2022-02-28 15:14:28,956] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-28 15:14:28,988] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-01T00:00:00+00:00
+[2022-02-28 15:14:28,994] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-28 15:14:28,994] {python.py:175} INFO - Done. Returned value was: ('水下罪案搜查班 第5集,水下罪案搜查班 第4集,水下罪案搜查班 第3集,水下罪案搜查班 第2集,水下罪案搜查班 第1集,每日資訊', 'yes_generate_notification')
+[2022-02-28 15:14:29,000] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/operators/python.py", line 213, in execute
+    raise AirflowException("Branch callable must return either a task ID or a list of IDs")
+airflow.exceptions.AirflowException: Branch callable must return either a task ID or a list of IDs
+[2022-02-28 15:14:29,008] {taskinstance.py:1282} INFO - Marking task as UP_FOR_RETRY. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220101T000000, start_date=20220228T071428, end_date=20220228T071429
+[2022-02-28 15:14:29,019] {standard_task_runner.py:92} ERROR - Failed to execute job 264 for task new_comic_available
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/operators/python.py", line 213, in execute
+    raise AirflowException("Branch callable must return either a task ID or a list of IDs")
+airflow.exceptions.AirflowException: Branch callable must return either a task ID or a list of IDs
+[2022-02-28 15:14:29,055] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-02-28 15:14:29,081] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-02-28 15:15:50,064] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2022-02-28 15:15:50,072] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2022-02-28 15:15:50,072] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 15:15:50,072] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-28 15:15:50,073] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 15:15:50,083] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-01-01 00:00:00+00:00
+[2022-02-28 15:15:50,085] {standard_task_runner.py:52} INFO - Started process 36051 to run task
+[2022-02-28 15:15:50,092] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-01-01T00:00:00+00:00', '--job-id', '282', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpuvki9j73', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpzblhhd3m']
+[2022-02-28 15:15:50,094] {standard_task_runner.py:77} INFO - Job 282: Subtask new_comic_available
+[2022-02-28 15:15:50,152] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-01-01T00:00:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-28 15:15:50,185] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-01T00:00:00+00:00
+[2022-02-28 15:15:50,189] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-28 15:15:50,190] {python.py:175} INFO - Done. Returned value was: ('水下罪案搜查班 第5集,水下罪案搜查班 第4集,水下罪案搜查班 第3集,水下罪案搜查班 第2集,水下罪案搜查班 第1集,每日資訊', 'yes_generate_notification')
+[2022-02-28 15:15:50,196] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/operators/python.py", line 213, in execute
+    raise AirflowException("Branch callable must return either a task ID or a list of IDs")
+airflow.exceptions.AirflowException: Branch callable must return either a task ID or a list of IDs
+[2022-02-28 15:15:50,202] {taskinstance.py:1282} INFO - Marking task as UP_FOR_RETRY. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220101T000000, start_date=20220228T071550, end_date=20220228T071550
+[2022-02-28 15:15:50,220] {standard_task_runner.py:92} ERROR - Failed to execute job 282 for task new_comic_available
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/operators/python.py", line 213, in execute
+    raise AirflowException("Branch callable must return either a task ID or a list of IDs")
+airflow.exceptions.AirflowException: Branch callable must return either a task ID or a list of IDs
+[2022-02-28 15:15:50,237] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-02-28 15:15:50,264] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

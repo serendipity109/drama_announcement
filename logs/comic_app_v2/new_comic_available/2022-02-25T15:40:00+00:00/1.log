@@ -1,0 +1,225 @@
+[2022-02-27 15:44:40,362] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 15:44:40,370] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 15:44:40,370] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 15:44:40,370] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-27 15:44:40,370] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 15:44:40,380] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-02-25 15:40:00+00:00
+[2022-02-27 15:44:40,382] {standard_task_runner.py:52} INFO - Started process 21379 to run task
+[2022-02-27 15:44:40,388] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-02-25T15:40:00+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmp533hnu71', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmp78tlpb53']
+[2022-02-27 15:44:40,390] {standard_task_runner.py:77} INFO - Job 95: Subtask new_comic_available
+[2022-02-27 15:44:40,433] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-27 15:44:40,468] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-25T15:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-25T15:40:00+00:00
+[2022-02-27 15:44:40,473] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-27 15:44:40,473] {python.py:175} INFO - Done. Returned value was: yes_generate_notification
+[2022-02-27 15:44:40,473] {skipmixin.py:140} INFO - Following branch yes_generate_notification
+[2022-02-27 15:44:40,474] {skipmixin.py:171} INFO - Skipping tasks ['no_do_nothing']
+[2022-02-27 15:44:40,495] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220225T154000, start_date=20220227T074440, end_date=20220227T074440
+[2022-02-27 15:44:40,533] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-27 15:44:40,565] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-27 16:45:50,362] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 16:45:50,370] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 16:45:50,370] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 16:45:50,370] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-27 16:45:50,370] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 16:45:50,379] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-02-25 15:40:00+00:00
+[2022-02-27 16:45:50,382] {standard_task_runner.py:52} INFO - Started process 28122 to run task
+[2022-02-27 16:45:50,388] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-02-25T15:40:00+00:00', '--job-id', '111', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmp_xysw_8j', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmp0ucascpy']
+[2022-02-27 16:45:50,390] {standard_task_runner.py:77} INFO - Job 111: Subtask new_comic_available
+[2022-02-27 16:45:50,438] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-27 16:45:50,474] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-25T15:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-25T15:40:00+00:00
+[2022-02-27 16:45:50,479] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-27 16:45:50,479] {python.py:175} INFO - Done. Returned value was: no_do_nothing
+[2022-02-27 16:45:50,480] {skipmixin.py:140} INFO - Following branch no_do_nothing
+[2022-02-27 16:45:50,480] {skipmixin.py:171} INFO - Skipping tasks ['yes_generate_notification']
+[2022-02-27 16:45:50,501] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220225T154000, start_date=20220227T084550, end_date=20220227T084550
+[2022-02-27 16:45:50,526] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-27 16:45:50,561] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-27 16:49:09,826] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 16:49:09,834] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 16:49:09,834] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 16:49:09,834] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-27 16:49:09,834] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 16:49:09,843] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-02-25 15:40:00+00:00
+[2022-02-27 16:49:09,845] {standard_task_runner.py:52} INFO - Started process 28527 to run task
+[2022-02-27 16:49:09,850] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-02-25T15:40:00+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmp5_x4xfjv', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmp8xdbtlf9']
+[2022-02-27 16:49:09,852] {standard_task_runner.py:77} INFO - Job 119: Subtask new_comic_available
+[2022-02-27 16:49:09,892] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-27 16:49:09,925] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-25T15:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-25T15:40:00+00:00
+[2022-02-27 16:49:09,930] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-27 16:49:09,930] {python.py:175} INFO - Done. Returned value was: no_do_nothing
+[2022-02-27 16:49:09,931] {skipmixin.py:140} INFO - Following branch no_do_nothing
+[2022-02-27 16:49:09,931] {skipmixin.py:171} INFO - Skipping tasks ['yes_generate_notification']
+[2022-02-27 16:49:09,950] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220225T154000, start_date=20220227T084909, end_date=20220227T084909
+[2022-02-27 16:49:09,991] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-27 16:49:10,025] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-27 16:51:04,462] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 16:51:04,472] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 16:51:04,472] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 16:51:04,472] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-27 16:51:04,472] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 16:51:04,482] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-02-25 15:40:00+00:00
+[2022-02-27 16:51:04,484] {standard_task_runner.py:52} INFO - Started process 28737 to run task
+[2022-02-27 16:51:04,490] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-02-25T15:40:00+00:00', '--job-id', '127', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpcy1sewe_', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpj7svui8z']
+[2022-02-27 16:51:04,492] {standard_task_runner.py:77} INFO - Job 127: Subtask new_comic_available
+[2022-02-27 16:51:04,539] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-27 16:51:04,576] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-25T15:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-25T15:40:00+00:00
+[2022-02-27 16:51:04,582] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-27 16:51:04,582] {python.py:175} INFO - Done. Returned value was: no_do_nothing
+[2022-02-27 16:51:04,583] {skipmixin.py:140} INFO - Following branch no_do_nothing
+[2022-02-27 16:51:04,583] {skipmixin.py:171} INFO - Skipping tasks ['yes_generate_notification']
+[2022-02-27 16:51:04,605] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220225T154000, start_date=20220227T085104, end_date=20220227T085104
+[2022-02-27 16:51:04,628] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-27 16:51:04,663] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-27 16:55:53,107] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 16:55:53,114] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 16:55:53,115] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 16:55:53,115] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-27 16:55:53,115] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 16:55:53,124] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-02-25 15:40:00+00:00
+[2022-02-27 16:55:53,126] {standard_task_runner.py:52} INFO - Started process 29069 to run task
+[2022-02-27 16:55:53,132] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-02-25T15:40:00+00:00', '--job-id', '134', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmppt42s_mu', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmp1ottah23']
+[2022-02-27 16:55:53,134] {standard_task_runner.py:77} INFO - Job 134: Subtask new_comic_available
+[2022-02-27 16:55:53,173] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-27 16:55:53,206] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-25T15:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-25T15:40:00+00:00
+[2022-02-27 16:55:53,210] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-27 16:55:53,210] {python.py:175} INFO - Done. Returned value was: no_do_nothing
+[2022-02-27 16:55:53,211] {skipmixin.py:140} INFO - Following branch no_do_nothing
+[2022-02-27 16:55:53,211] {skipmixin.py:171} INFO - Skipping tasks ['yes_generate_notification']
+[2022-02-27 16:55:53,230] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220225T154000, start_date=20220227T085553, end_date=20220227T085553
+[2022-02-27 16:55:53,277] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-27 16:55:53,311] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-27 17:02:11,053] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 17:02:11,060] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 17:02:11,060] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 17:02:11,060] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-27 17:02:11,060] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 17:02:11,069] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-02-25 15:40:00+00:00
+[2022-02-27 17:02:11,071] {standard_task_runner.py:52} INFO - Started process 29568 to run task
+[2022-02-27 17:02:11,077] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-02-25T15:40:00+00:00', '--job-id', '142', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmplz3dlky6', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpy9sd2o10']
+[2022-02-27 17:02:11,078] {standard_task_runner.py:77} INFO - Job 142: Subtask new_comic_available
+[2022-02-27 17:02:11,118] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-27 17:02:11,151] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-25T15:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-25T15:40:00+00:00
+[2022-02-27 17:02:11,155] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-27 17:02:11,156] {python.py:175} INFO - Done. Returned value was: no_do_nothing
+[2022-02-27 17:02:11,156] {skipmixin.py:140} INFO - Following branch no_do_nothing
+[2022-02-27 17:02:11,156] {skipmixin.py:171} INFO - Skipping tasks ['yes_generate_notification']
+[2022-02-27 17:02:11,175] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220225T154000, start_date=20220227T090211, end_date=20220227T090211
+[2022-02-27 17:02:11,221] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-27 17:02:11,254] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-27 17:03:06,045] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 17:03:06,053] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-27 17:03:06,053] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 17:03:06,053] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-27 17:03:06,053] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 17:03:06,064] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-02-25 15:40:00+00:00
+[2022-02-27 17:03:06,066] {standard_task_runner.py:52} INFO - Started process 29669 to run task
+[2022-02-27 17:03:06,072] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-02-25T15:40:00+00:00', '--job-id', '149', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmplda60fh6', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpox52uhlt']
+[2022-02-27 17:03:06,074] {standard_task_runner.py:77} INFO - Job 149: Subtask new_comic_available
+[2022-02-27 17:03:06,115] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-27 17:03:06,149] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-25T15:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-25T15:40:00+00:00
+[2022-02-27 17:03:06,153] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-27 17:03:06,154] {python.py:175} INFO - Done. Returned value was: no_do_nothing
+[2022-02-27 17:03:06,154] {skipmixin.py:140} INFO - Following branch no_do_nothing
+[2022-02-27 17:03:06,154] {skipmixin.py:171} INFO - Skipping tasks ['yes_generate_notification']
+[2022-02-27 17:03:06,174] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220225T154000, start_date=20220227T090306, end_date=20220227T090306
+[2022-02-27 17:03:06,218] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-27 17:03:06,251] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-28 14:25:22,515] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-28 14:25:22,525] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-28 14:25:22,526] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 14:25:22,526] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-28 14:25:22,526] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 14:25:22,538] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-02-25 15:40:00+00:00
+[2022-02-28 14:25:22,540] {standard_task_runner.py:52} INFO - Started process 31680 to run task
+[2022-02-28 14:25:22,547] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-02-25T15:40:00+00:00', '--job-id', '166', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpo406tpmc', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpb3ve843y']
+[2022-02-28 14:25:22,549] {standard_task_runner.py:77} INFO - Job 166: Subtask new_comic_available
+[2022-02-28 14:25:22,597] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-28 14:25:22,645] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-25T15:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-25T15:40:00+00:00
+[2022-02-28 14:25:22,650] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-28 14:25:22,650] {python.py:175} INFO - Done. Returned value was: no_do_nothing
+[2022-02-28 14:25:22,651] {skipmixin.py:140} INFO - Following branch no_do_nothing
+[2022-02-28 14:25:22,651] {skipmixin.py:171} INFO - Skipping tasks ['yes_generate_notification']
+[2022-02-28 14:25:22,675] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220225T154000, start_date=20220228T062522, end_date=20220228T062522
+[2022-02-28 14:25:22,724] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-28 14:25:22,764] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-28 14:28:46,593] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-28 14:28:46,605] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [queued]>
+[2022-02-28 14:28:46,605] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 14:28:46,605] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-02-28 14:28:46,605] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-28 14:28:46,615] {taskinstance.py:1264} INFO - Executing <Task(BranchPythonOperator): new_comic_available> on 2022-02-25 15:40:00+00:00
+[2022-02-28 14:28:46,617] {standard_task_runner.py:52} INFO - Started process 31999 to run task
+[2022-02-28 14:28:46,623] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'comic_app_v2', 'new_comic_available', 'scheduled__2022-02-25T15:40:00+00:00', '--job-id', '176', '--raw', '--subdir', 'DAGS_FOLDER/comic_app_v2.py', '--cfg-path', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmp85539n2s', '--error-file', '/var/folders/jb/grqrlwkd311flwk_zt30r7wr0000gn/T/tmpn5sofkzq']
+[2022-02-28 14:28:46,625] {standard_task_runner.py:77} INFO - Job 176: Subtask new_comic_available
+[2022-02-28 14:28:46,673] {logging_mixin.py:109} INFO - Running <TaskInstance: comic_app_v2.new_comic_available scheduled__2022-02-25T15:40:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-28 14:28:46,715] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Adam
+AIRFLOW_CTX_DAG_ID=comic_app_v2
+AIRFLOW_CTX_TASK_ID=new_comic_available
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-25T15:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-25T15:40:00+00:00
+[2022-02-28 14:28:46,720] {logging_mixin.py:109} INFO - 跟紀錄比較，有沒有新連載？
+[2022-02-28 14:28:46,720] {python.py:175} INFO - Done. Returned value was: no_do_nothing
+[2022-02-28 14:28:46,721] {skipmixin.py:140} INFO - Following branch no_do_nothing
+[2022-02-28 14:28:46,721] {skipmixin.py:171} INFO - Skipping tasks ['yes_generate_notification']
+[2022-02-28 14:28:46,745] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=comic_app_v2, task_id=new_comic_available, execution_date=20220225T154000, start_date=20220228T062846, end_date=20220228T062846
+[2022-02-28 14:28:46,799] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-28 14:28:46,837] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

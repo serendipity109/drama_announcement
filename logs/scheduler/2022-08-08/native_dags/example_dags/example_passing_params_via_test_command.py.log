@@ -1,0 +1,14 @@
+[2022-08-08 22:02:52,069] {processor.py:163} INFO - Started process (PID=21018) to work on /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-08-08 22:02:52,070] {processor.py:642} INFO - Processing file /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2022-08-08 22:02:52,072] {logging_mixin.py:109} INFO - [2022-08-08 22:02:52,071] {dagbag.py:500} INFO - Filling up the DagBag from /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-08-08 22:02:52,151] {processor.py:654} INFO - DAG(s) dict_keys(['example_passing_params_via_test_command']) retrieved from /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-08-08 22:02:52,469] {logging_mixin.py:109} INFO - [2022-08-08 22:02:52,469] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-08-08 22:02:52,490] {logging_mixin.py:109} INFO - [2022-08-08 22:02:52,490] {dag.py:2937} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2022-08-08T14:01:00+00:00
+[2022-08-08 22:02:52,503] {processor.py:171} INFO - Processing /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.435 seconds
+[2022-08-08 22:04:44,470] {processor.py:163} INFO - Started process (PID=21118) to work on /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-08-08 22:04:44,472] {processor.py:642} INFO - Processing file /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py for tasks to queue
+[2022-08-08 22:04:44,473] {logging_mixin.py:109} INFO - [2022-08-08 22:04:44,472] {dagbag.py:500} INFO - Filling up the DagBag from /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-08-08 22:04:44,534] {processor.py:654} INFO - DAG(s) dict_keys(['example_passing_params_via_test_command']) retrieved from /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py
+[2022-08-08 22:04:44,551] {logging_mixin.py:109} INFO - [2022-08-08 22:04:44,551] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-08-08 22:04:44,565] {logging_mixin.py:109} INFO - [2022-08-08 22:04:44,565] {dag.py:2937} INFO - Setting next_dagrun for example_passing_params_via_test_command to 2022-08-08T14:03:00+00:00
+[2022-08-08 22:04:44,573] {processor.py:171} INFO - Processing /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py took 0.104 seconds

@@ -1,0 +1,20 @@
+[2022-08-08 22:01:52,804] {processor.py:163} INFO - Started process (PID=20900) to work on /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2022-08-08 22:01:52,804] {processor.py:642} INFO - Processing file /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-08-08 22:01:52,805] {logging_mixin.py:109} INFO - [2022-08-08 22:01:52,805] {dagbag.py:500} INFO - Filling up the DagBag from /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2022-08-08 22:01:52,830] {processor.py:656} WARNING - No viable dags retrieved from /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2022-08-08 22:01:52,831] {processor.py:171} INFO - Processing /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.028 seconds
+[2022-08-08 22:03:56,015] {processor.py:163} INFO - Started process (PID=21075) to work on /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2022-08-08 22:03:56,017] {processor.py:642} INFO - Processing file /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-08-08 22:03:56,017] {logging_mixin.py:109} INFO - [2022-08-08 22:03:56,017] {dagbag.py:500} INFO - Filling up the DagBag from /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2022-08-08 22:03:56,044] {processor.py:656} WARNING - No viable dags retrieved from /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2022-08-08 22:03:56,046] {processor.py:171} INFO - Processing /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.031 seconds
+[2022-08-08 22:05:14,722] {processor.py:163} INFO - Started process (PID=21141) to work on /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2022-08-08 22:05:14,724] {processor.py:642} INFO - Processing file /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-08-08 22:05:14,724] {logging_mixin.py:109} INFO - [2022-08-08 22:05:14,724] {dagbag.py:500} INFO - Filling up the DagBag from /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2022-08-08 22:05:14,761] {processor.py:656} WARNING - No viable dags retrieved from /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2022-08-08 22:05:14,762] {processor.py:171} INFO - Processing /opt/anaconda3/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.044 seconds
+[2022-08-08 22:07:54,422] {processor.py:163} INFO - Started process (PID=21336) to work on /opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py
+[2022-08-08 22:07:54,425] {processor.py:642} INFO - Processing file /opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-08-08 22:07:54,426] {logging_mixin.py:109} INFO - [2022-08-08 22:07:54,426] {dagbag.py:500} INFO - Filling up the DagBag from /opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py
+[2022-08-08 22:07:54,450] {processor.py:656} WARNING - No viable dags retrieved from /opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py
+[2022-08-08 22:07:54,455] {processor.py:171} INFO - Processing /opt/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py took 0.039 seconds
